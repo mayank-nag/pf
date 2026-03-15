@@ -54,5 +54,10 @@ export function playHeroEntrance() {
             opacity: [0, 1],
             translateY: [8, 0],
             duration: 600,
-        }, '-=400');
+        }, '-=400')
+        .add('#heroCTA', {
+            opacity: [0, 1],
+            translateY: [12, 0],
+            duration: 600,
+        }, '-=300');
 }

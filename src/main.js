@@ -9,8 +9,13 @@ import { renderHero } from './components/hero.js';
 import { renderAbout } from './components/about.js';
 import { renderSkills } from './components/skills.js';
 import { renderPortfolio } from './components/portfolio.js';
+import { renderStats } from './components/stats.js';
+import { renderGithub } from './components/github.js';
+import { renderSecurity } from './components/security.js';
+import { renderBlog } from './components/blog.js';
 import { renderContact } from './components/contact.js';
 import { renderFooter } from './components/footer.js';
+import { renderTerminal } from './components/terminal.js';
 
 // Animations
 import { playHeroEntrance } from './animations/heroEntrance.js';
@@ -20,7 +25,7 @@ import { initSkillHover } from './animations/skillHover.js';
 
 // ─── Initialize Theme ───
 function initTheme() {
-  const saved = localStorage.getItem('theme') || 'light';
+  const saved = localStorage.getItem('theme') || 'dark';
   document.documentElement.setAttribute('data-theme', saved);
 }
 
@@ -34,8 +39,15 @@ function init() {
   renderAbout();
   renderSkills();
   renderPortfolio();
+  renderStats();
+  renderGithub();
+  renderSecurity();
+  renderBlog();
   renderContact();
   renderFooter();
+
+  // Terminal is a floating overlay, rendered to body
+  renderTerminal();
 
   // Initialize interactions
   const { attachHover } = initCursor();

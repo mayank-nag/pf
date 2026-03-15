@@ -208,3 +208,46 @@
         transform: scaleY(0.6);
     }
 }
+
+/* ─── Hero CTA Buttons ─── */
+.hero-cta {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+    opacity: 0;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 12px 28px;
+    border-radius: 100px;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+.cta-primary {
+    background: white;
+    color: black;
+}
+
+.cta-primary:hover {
+    transform: scale(1.04);
+    background: #e8e6e1;
+}
+
+.cta-outline {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.cta-outline:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.06);
+    transform: scale(1.04);
+}

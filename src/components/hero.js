@@ -32,6 +32,12 @@ export function renderHero() {
       <div class="hero-divider" id="heroDivider"></div>
       <p class="hero-sub" id="heroSub">${profile.heroSub}</p>
       <p class="hero-role" id="heroRole">${profile.tagline}</p>
+      <div class="hero-cta" id="heroCTA">
+        <a href="#portfolio" class="cta-btn cta-primary">View Projects</a>
+        <a href="${profile.resumePath}" download class="cta-btn cta-outline">Download Resume</a>
+        <a href="${profile.CVPath}" download class="cta-btn cta-outline">Download CV</a>
+        <a href="#contact" class="cta-btn cta-outline">Contact Me</a>
+      </div>
     </div>
 
     <div class="scroll-hint" id="scrollHint">

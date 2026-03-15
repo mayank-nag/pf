@@ -1,0 +1,177 @@
+/* ─── Security Playground Section ─── */
+#security {
+    background: var(--about-bg);
+    color: var(--about-text);
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+.security-intro {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--about-muted);
+    line-height: 1.7;
+    max-width: 600px;
+    margin-bottom: 48px;
+}
+
+.security-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.security-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 36px;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+[data-theme='light'] .security-card {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+.security-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme='light'] .security-card:hover {
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.security-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.security-card p {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--about-muted);
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.security-input {
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: inherit;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+[data-theme='light'] .security-input {
+    background: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+.security-input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme='light'] .security-input:focus {
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.shift-input {
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+}
+
+.strength-bar {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+    margin-top: 16px;
+    overflow: hidden;
+}
+
+[data-theme='light'] .strength-bar {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.strength-fill {
+    height: 100%;
+    width: 0%;
+    background: #333;
+    border-radius: 2px;
+    transition: width 0.3s ease, background 0.3s ease;
+}
+
+.strength-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 8px;
+    letter-spacing: 0.05em;
+}
+
+.cipher-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.cipher-controls label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.security-btn {
+    padding: 8px 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    color: inherit;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+[data-theme='light'] .security-btn {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
+.security-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-theme='light'] .security-btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.cipher-output {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--about-muted);
+    margin-top: 16px;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+    word-break: break-all;
+    min-height: 44px;
+}
+
+[data-theme='light'] .cipher-output {
+    background: rgba(0, 0, 0, 0.03);
+}

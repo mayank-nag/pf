@@ -1,0 +1,88 @@
+/* ─── GitHub Activity Section ─── */
+#github {
+    background: var(--skills-bg);
+    color: var(--skills-text);
+    transition: background 0.4s ease;
+}
+
+.github-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+
+.github-heatmap {
+    margin-bottom: 48px;
+}
+
+.heatmap-img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 4px;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+[data-theme='dark'] .heatmap-img {
+    filter: invert(1) hue-rotate(180deg) brightness(0.85);
+}
+
+.repos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.github-repo-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.3s, border-color 0.3s, transform 0.3s;
+    display: block;
+}
+
+.github-repo-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.repo-icon {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.repo-name {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #58a6ff;
+}
+
+.repo-desc {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.repo-lang {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.lang-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}

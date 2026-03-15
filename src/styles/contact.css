@@ -16,7 +16,7 @@
     font-weight: 800;
     line-height: 0.95;
     letter-spacing: -0.04em;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .contact-big em {
@@ -25,9 +25,78 @@
     color: transparent;
 }
 
+/* ─── Social Links ─── */
+.contact-links {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.contact-social:hover {
+    background: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+/* ─── Contact Form ─── */
+.contact-form {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: white;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.contact-input:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.contact-input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
 .contact-btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     background: white;
     color: black;
@@ -35,9 +104,11 @@
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 0.04em;
-    padding: 18px 40px;
+    padding: 16px 40px;
     border-radius: 100px;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
     transition: transform 0.2s, background 0.2s;
 }
 
@@ -46,10 +117,33 @@
     background: var(--bg-primary);
 }
 
+/* ─── Resume Download ─── */
+.resume-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+    transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.resume-download:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+}
+
 .contact-email {
     font-family: var(--font-mono);
     font-size: 13px;
     color: var(--text-muted);
-    margin-top: 28px;
+    margin-top: 8px;
     letter-spacing: 0.05em;
 }

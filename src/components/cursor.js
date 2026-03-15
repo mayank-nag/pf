@@ -17,7 +17,7 @@ export function initCursor() {
     document.addEventListener('mousemove', (e) => {
         mx = e.clientX;
         my = e.clientY;
-        cursor.style.transform = `translate(${mx - 5}px, ${my - 5}px)`;
+        cursor.style.transform = `translate(${mx - 4}px, ${my - 4}px)`;
     });
 
     function animateRing() {
@@ -30,7 +30,7 @@ export function initCursor() {
 
     // Attach hover detection to interactive elements
     function attachHover() {
-        document.querySelectorAll('a, button, .skill-card, .project-card').forEach((el) => {
+        document.querySelectorAll('a, button, .skill-card, .project-card, .blog-card, .github-repo-card, .security-btn, .contact-social, .resume-download, .terminal-toggle').forEach((el) => {
             el.addEventListener('mouseenter', () => ring.classList.add('hover'));
             el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
         });
